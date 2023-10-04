@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admission Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="AdmissionServlet" method="post">
+                <h1>Personal Information</h1>
+                <label>Firstname</label>
+                <input type="text" name="firstname"/> <br/>
+                <label>Middlename</label>
+                <input type="text" name="middlename"/> <br/>
+                <label>Lastname</label>
+                <input type="text" name="lastname"/> <br/>
+                <label>Student ID</label>
+                <input type="number" name="student_id"/> <br/>
+<!--                <label>Email</label>
+                <input type="email" name="email" required/> <br/>-->
+                <label>Date of Birth</label>
+                <input type="date" name="dob" required/> <br/>
+                <h1>Academic Information</h1>
+                <label>Faculty</label>
+                <select name="faculty">
+                    <option>Information Technology</option>
+                    <option>Marketing</option>
+                    <option>Theology</option>
+                    <option>Nursing</option>
+                </select> <br/>
+                <label>Department</label>
+                <select name="department">
+                    <option>Software Engineering</option>
+                    <option>Network and communication</option>
+                    <option>Information Management</option>
+                </select> <br/>
+                <label>Passport Photo</label>
+                <input type="file" name="photo"/> <br/>
+                <label>Diploma</label>
+                <input type="file" name="diploma"/> <br/>
+                <button>Register</button>
+            </form>
+        </div>
+    </body>
+</html>
